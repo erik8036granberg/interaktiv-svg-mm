@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<div class="svgContainer"></div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", hentSvg);
+
+		let orgfarve;
+		let selected;
+
+		async function hentSvg() {
+			console.log("hentSvg kører")
+
+			let mySvg = await fetch("pie.svg");
+			console.log("mySvg");
+
+			let pieChart = await mySvg.text();
+			console.log("mySvg");
+
+			document.querySelector(".svgContainer").innerHTML = pieChart;
+
+			document.querySelector(".svgContainer").addEventListener("mouseover", visId);
+
+			document.querySelector(".svgContainer").addEventListener("mouseout", reset);
+		}
+
+		function visId() {
+			console.log("event.target.id");
+			selected = event.target;
+			orgfarve = selected.getAttribute("fill");
+			selected.setAttribute("fill", "#123456");
+		}
+
+
+		function reset() {
+			selected.setAttribute("fill", orgfarve);
+		}
+	</script>
+
+</body>
+
+</html>

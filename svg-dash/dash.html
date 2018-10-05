@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		.myline {
+			stroke-dasharray: 800;
+			stroke-dashoffset: 800;
+			animation: dash_frames 2s linear both;
+		}
+
+		@keyframes dash_frames {
+
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<svg>
+		<line class="myline" x1="60.5" y1="121.5" x2="800" y2="121.5" stroke="black" />
+	</svg>
+
+</body>
+
+</html>

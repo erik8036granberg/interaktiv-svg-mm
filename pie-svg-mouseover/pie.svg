@@ -1,0 +1,6 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.52 400.88">
+  <title>pie</title>
+  <path id="three" d="M393,318.21,337.85,510.66C231.56,480.18,170.1,369.31,200.58,263c24.93-86.94,102-145,192.45-145Z" transform="translate(-192.77 -118)" fill="#5aba47"/>
+  <path id="two" d="M393,318.21l181.45-84.61c46.73,100.21,3.37,219.33-96.84,266.06-45.5,21.22-91.54,24.84-139.8,11Z" transform="translate(-192.77 -118)" fill="#1f449c"/>
+  <path id="one" d="M393,318.21V118c80.39,0,147.48,42.74,181.45,115.6Z" transform="translate(-192.77 -118)" fill="#bf5827"/>
+</svg>
